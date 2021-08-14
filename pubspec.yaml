@@ -1,14 +1,21 @@
-name: package_name
+name: zam_built_in_clipboard
 version: 0.0.1
-description: << Write your description here (not less than 60 characters). >>
+description: An adapter for the built-in clipboard by the flutter community.
 homepage: https://zamstation.com
-repository: https://github.com/zamstation/package_name
+repository: https://github.com/zamstation/zam_clipboard
+publish_to: none
 
 environment:
   sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
   zam_core: ^0.5.0
+  zam_clipboard:
+    git:
+      url: https://github.com/zamstation/zam_clipboard.git
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
+  flutter_lints: ^1.0.4
   zam_test: ^0.3.0
